@@ -4,57 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <title>99 verhalen - aanmelden</title>
+    <link rel="stylesheet" href="projectweb.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">verhalen</a></li>
-                <li><a href="">medewerkers</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </nav>
-        <img src="#" alt="logo">
-
+        <img src="http://www.ns.nl/static/generic/2.1.0/images/nslogo.svg" alt="logo" id="logo">
     </header>
-    <main>
-        <h1>Aanmelden</h1>
-        <form>
-            <fieldset>
-                <legend>Gegevens</legend>
-                Naam:
-                <br>
-                <input type="text" name="naam" placeholder="Jan" autofocus required>
-                <br> Tussenvoegsel:
-                <br>
-                <input type="text" name="tussenvoegsel" placeholder="de">
-                <br> Achternaam:
-                <br>
-                <input type="text" name="achternaam" placeholder="Groot" required>
-                <br> Adres:
-                <br>
-                <input type="text" name="adres" placeholder="Straat + huisnummer">
-                <br> Postcode:
-                <br>
-                <input type="text" name="postcode" placeholder="1234AB" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}">
-                <br> Email:
-                <br>
-                <input type="email" name="email" placeholder="jandegroot@email.com" required>
-                <br> Telefoonnummer:
-                <br>
-                <input type="text" name="adres" placeholder="0612345678">
-                <br> Gebruikersnaam
-                <br>
-                <input type="text" name="gebruikersnaam" placeholder="jandg01" required>
-                <br> Wachtwoord
-                <br>
-                <input type="password" name="wachtwoord" required>
-                <br>
-            </fieldset>
-            <input type="submit" name="aanmelden" value="Meld mij aan!">
-        </form>
+    <main id="aanmeldpage">
+        <h1>Aanmelden / inloggen</h1>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Gegevens</legend>
+                    <label for="naam">Naam</label>
+                    <input type="text" name="naam" placeholder="Jan" autofocus required>
+                    <label for="tussenvoegsel">Tussenvoegsel</label>
+                    <input type="text" name="tussenvoegsel" placeholder="de">
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" name="achternaam" placeholder="Groot" required>
+                    <label for="adres">Adres</label>
+                    <input type="text" name="adres" placeholder="Straat + huisnummer">
+                    <label for="postcode">Postcode</label>
+                    <input type="text" name="postcode" placeholder="1234AB" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="jandegroot@email.com" required>
+                    <label for="tel">Telefoonnummer</label>
+                    <input type="tel" name="tel" placeholder="0612345678">
+                    <label for="gebruikersnaam">Gebruikersnaam</label>
+                    <input type="text" name="gebruikersnaam" placeholder="jandg01" required>
+                    <label for="password">Wachtwoord</label>
+                    <input type="password" name="wachtwoord" placeholder="********" required>
+                </fieldset>
+                <a href="projectweb_overzichtspagina.html"><input type="submit" name="aanmelden" value="Meld mij aan! >" class="btn"></a>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Inloggen</legend>
+                    <label for="gebruikersnaam">Gebruikersnaam</label>
+                    <input type="text" name="gebruikersnaam" placeholder="jandg01" required>
+                    <label for="password">Wachtwoord</label>
+                    <input type="password" name="wachtwoord" placeholder="********" required>
+                </fieldset>
+                <input type="submit" name="aanmelden" value="Inloggen >" class="btn">
+            </form>
+        </section>
     </main>
 </body>
 
