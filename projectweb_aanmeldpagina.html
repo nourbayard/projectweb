@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>99 verhalen - aanmelden</title>
-    <link rel="stylesheet" href="projectweb.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -13,10 +13,20 @@
     <header>
         <img src="http://www.ns.nl/static/generic/2.1.0/images/nslogo.svg" alt="logo" id="logo">
     </header>
-    <main id="aanmeldpage">
+    <main id="lspage">
         <h1>Aanmelden / inloggen</h1>
         <section>
-            <form>
+           <form id="login">
+                <fieldset>
+                    <legend>Inloggen</legend>
+                    <label for="gebruikersnaam">Gebruikersnaam</label>
+                    <input type="text" name="gebruikersnaam" placeholder="jandg01" required>
+                    <label for="password">Wachtwoord</label>
+                    <input type="password" name="wachtwoord" placeholder="********" required>
+                </fieldset>
+                <input type="submit" name="aanmelden" value="Inloggen >" class="btn">
+            </form>
+            <form id="signup">
                 <fieldset>
                     <legend>Gegevens</legend>
                     <label for="naam">Naam</label>
@@ -39,16 +49,6 @@
                     <input type="password" name="wachtwoord" placeholder="********" required>
                 </fieldset>
                 <a href="projectweb_overzichtspagina.html"><input type="submit" name="aanmelden" value="Meld mij aan! >" class="btn"></a>
-            </form>
-            <form>
-                <fieldset>
-                    <legend>Inloggen</legend>
-                    <label for="gebruikersnaam">Gebruikersnaam</label>
-                    <input type="text" name="gebruikersnaam" placeholder="jandg01" required>
-                    <label for="password">Wachtwoord</label>
-                    <input type="password" name="wachtwoord" placeholder="********" required>
-                </fieldset>
-                <input type="submit" name="aanmelden" value="Inloggen >" class="btn">
             </form>
         </section>
     </main>

@@ -3,94 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>99 verhalen - detailpagina</title>
-    <link rel="stylesheet" href="projectweb.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>overzichtspagina</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="http://www.ns.nl/static/generic/2.1.0/images/nslogo.svg" alt="logo" id="logo">
-        <a href="#" id="profiel">profiel</a>
+        <img src="logo.png" alt="logo" id="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" id="profiel">profiel</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <div id="background"></div>
-            <section id="filter">
-                <input type=search results=5 placeholder="Zoek op trefwoorden of tags of klik een genre aan..." name=searchbar>
-                <form action="#" id="tags">
-                    <input type="checkbox" name="genre" value="fictie">
-                    <label>fictie</label>
-                    <input type="checkbox" name="genre" value="avontuur">
-                    <label>avontuur</label>
-                    <input type="checkbox" name="genre" value="vriendschap">
-                    <label>vriendschap</label>
-                    <input type="checkbox" name="genre" value="nonfictie">
-                    <label>non-fictie</label>
-                </form>
-                <input type="submit" name="zoeken" value="Zoeken >" class="btn" id="zoekbtn">
-            </section>
-            <section id="holder">
-                <article class="tile">
-                    <h2>Blind</h2>
-                    <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. […]</p>
-                    <span><button>save ✓</button>
-                <button>like ♡</button>
-                <button>lees verder ></button></span>
-                </article>
-                <!--
+    <div id="background">
+        <img src="headerbg.jpg">
+    </div>
+    <section id="filter">
+       <h2>Zoek &#38; filter</h2>
+        <input type=search placeholder="Zoek op trefwoorden..." name=searchbar id="search">
+        <form action="#" id="tags">
+            <input type="checkbox" name="genre" value="Drama">
+            <label class="genre">Drama</label>
+            <input type="checkbox" name="genre" value="avontuur">
+            <label class="genre">Avontuur</label>
+            <input type="checkbox" name="genre" value="vriendschap">
+            <label class="genre">Vriendschap</label>
+            <input type="checkbox" name="genre" value="nonfictie">
+            <label class="genre">Sci-Fi</label>
+        </form>
+        <button>Meer opties</button>
+        <input type="submit" name="search" value="Zoeken &#62;" id="searchbtn">
+    </section>
+    <main id="overview">
+        <article class="tile">
+           <span class="pic">
+               <img src="pic2.png">
+           </span>
+            <h2>Blind</h2>
+            <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. […]</p>
+            <span class="int"><button>save ✓</button>
+                    <button>like ♡</button>
+                    <button>lees verder &#62;</button></span>
+        </article>
+        <!--
             -->
-                <article class="tile">
-                    <h2>Doof</h2>
-                    <p>De bus stopt. Mensen stappen uit. Heel voorzichtig kijk ik in de kinderwagen. Mijn zoon slaapt eindelijk. Ik had het kunnen weten, want halverwege de busreis merkte ik dat de mensen zich niet meer aan ons stoorden. […]</p>
-                    <span><button class="bookmark">save ✓</button>
-                <button class="like">like ♡</button>
-                <button class="read">lees verder ></button></span>
+        <article class="tile">
+           <span class="pic">
+               <img src="pic1.png">
+           </span>
+            <h2>Doof</h2>
+            <p>De bus stopt. Mensen stappen uit. Heel voorzichtig kijk ik in de kinderwagen. Mijn zoon slaapt eindelijk. Ik had het kunnen weten, want halverwege de busreis merkte ik dat de mensen zich niet meer aan ons stoorden. […]</p>
+            <span class="int"><button class="bookmark">save ✓</button>
+                    <button class="like">like ♡</button>
+                    <button class="read">lees verder &#62;</button></span>
 
-                </article>
-                <!--
+        </article>
+        <!--
             -->
-                <article class="tile">
-                    <h2>Onomatopee</h2>
-                    <p>De ronk-ronk-bus komt met piiieeepende remmen tot stilstand en opent sssslissend en sssissend haar deuren. Ik stap-stap-stap uit de bus en push oef-oef de kinderwagen voort waarvan de rrrollende wielen mijn zzzlapende zoontje dragen.[…]</p>
+        <article class="tile">
+           <span class="pic">
+               <img src="pic3.png">
+           </span>
+            <h2>Onomatopee</h2>
+            <p>De ronk-ronk-bus komt met piiieeepende remmen tot stilstand en opent sssslissend en sssissend haar deuren. Ik stap-stap-stap uit de bus en push oef-oef de kinderwagen voort waarvan de rrrollende wielen mijn zzzlapende zoontje dragen.[…]</p>
 
-                    <span><button>save ✓</button>
+            <span class="int"><button>save ✓</button>
                 <button>like ♡</button>
-                <button>lees verder ></button></span>
-                </article>
-                <!--
+                <button>lees verder &#62;</button></span>
+        </article>
+        <!--
             -->
-                <article class="tile">
-                    <h2>Blind</h2>
-                    <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. […]</p>
-                    <span><button>save ✓</button>
+        <article class="tile">
+           <span class="pic">
+               <img src="pic6.png">
+           </span>
+            <h2>Blind</h2>
+            <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. […]</p>
+            <span class="int"><button>save ✓</button>
                 <button>like ♡</button>
-                <button>lees verder ></button></span>
+                <button>lees verder &#62;</button></span>
 
-                </article>
-                <!--
+        </article>
+        <!--
             -->
-                <article class="tile">
-                    <h2>Doof</h2>
-                    <p>De bus stopt. Mensen stappen uit. Heel voorzichtig kijk ik in de kinderwagen. Mijn zoon slaapt eindelijk. Ik had het kunnen weten, want halverwege de busreis merkte ik dat de mensen zich niet meer aan ons stoorden. […]</p>
-                    <span><button>save ✓</button>
+        <article class="tile">
+           <span class="pic">
+               <img src="pic4.png">
+           </span>
+            <h2>Doof</h2>
+            <p>De bus stopt. Mensen stappen uit. Heel voorzichtig kijk ik in de kinderwagen. Mijn zoon slaapt eindelijk. Ik had het kunnen weten, want halverwege de busreis merkte ik dat de mensen zich niet meer aan ons stoorden. […]</p>
+            <span class="int"><button>save ✓</button>
                 <button>like ♡</button>
-                <button>lees verder ></button></span>
+                <button>lees verder &#62;</button></span>
 
-                </article>
-                <!--
+        </article>
+        <!--
             -->
-                <article class="tile">
-                    <h2>Onomatopee</h2>
-                    <p>De ronk-ronk-bus komt met piiieeepende remmen tot stilstand en opent sssslissend en sssissend haar deuren. Ik stap-stap-stap uit de bus en push oef-oef de kinderwagen voort waarvan de rrrollende wielen mijn zzzlapende zoontje dragen.[…]</p>
+        <article class="tile">
+           <span class="pic">
+               <img src="pic5.png">
+           </span>
+            <h2>Onomatopee</h2>
+            <p>De ronk-ronk-bus komt met piiieeepende remmen tot stilstand en opent sssslissend en sssissend haar deuren. Ik stap-stap-stap uit de bus en push oef-oef de kinderwagen voort waarvan de rrrollende wielen mijn zzzlapende zoontje dragen.[…]</p>
 
-                    <span><button>save ✓</button>
+            <span class="int"><button>save ✓</button>
                 <button>like ♡</button>
-                <button>lees verder ></button></span>
-                </article>
-            </section>
-        </section>
+                <button>lees verder &#62;</button></span>
+        </article>
     </main>
 </body>
 

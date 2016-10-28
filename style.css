@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'open sans'
+}
+
+body {
+    background: #e6e6e9;
+    color: #003082;
+}
+
+
+/*****************    Header         */
+
+header {
+    width: 100%;
+    position: fixed;
+    height: 3em;
+    background: white;
+    top: 0;
+    padding-top: 0.5em;
+    box-shadow: rgba(7, 7, 33, 0.14902) 0px 2px 0px 0px;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*****************    Nav         */
+
+nav {
+    display: inline-block;
+    color: #003082;
+    padding: 0;
+    margin-right: 2%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15%;
+}
+
+li {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+
+/*****************    Main         */
+
+main {
+    margin: 0 auto 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/*****************    Misc         */
+
+input[type=search] {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0!important;
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 1em!important;
+}
+
+input,
+button,
+submit,
+select {
+    border: none;
+    background: none;
+}
+
+#background {
+    display: block;
+    z-index: 0;
+}
+
+#background > img {
+    width: 100%;
+}
+
+#filter {
+    display: block;
+    position: relative;
+    width: 97%;
+    height: 15em;
+    margin: -9em auto 0 auto;
+    background: #ffc917;
+    z-index: 1;
+}
+
+#searchbtn {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #0079d3;
+    color: #fff;
+    height: 2em;
+    box-shadow: 0 -.125em 0 #005ca0 inset;
+}
+
+a {
+    color: rgb(0, 48, 130);
+}
+
+p {
+    color: black;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: .5em 1.2em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tile {
+    box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);
+    overflow: hidden;
+    background-color: #fff;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+#logo {
+    margin-left: 1.5%;
+    margin-top: 1.1%;
+    width: 60px;
+    height: 22px;
+}
+
+.tile > .pic {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tile > .pic > img {
+    width: 100%;
+}
+
+
+/*****************    Buttons         */
+
+#search {
+    width: 95%;
+    display: block;
+    margin: .5em auto 1em auto;
+    background-color: white;
+    padding: .5em 1em 0 1em;
+    font-size: .8em;
+}
+
+label {
+    margin-right: .9em;
+    height: 1em;
+    border-bottom: 1px solid #003082;
+}
+
+#tags {
+    display: block;
+    width: 95%;
+    margin: 1em auto 1em auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+button {
+    font-size: 1em;
+}
+
+#filter > button {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    color: #fff;
+    height: 2em;
+    box-shadow: 0 -.12em 0 #cfa317 inset;
+    background-color: #e6b517;
+    margin-bottom: .5em;
+    color: black;
+}
+
+.int {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+}
+
+.int > button:nth-of-type(1),
+button:nth-of-type(2) {
+    background-color: #ffc917;
+    color: white;
+    box-shadow: 0 -.1em 0 rgba(7, 7, 33, .1) inset;
+}
+
+.int > button:nth-of-type(3) {
+    background-color: #0079d3;
+    box-shadow: 0 -.1em 0 #005ca0 inset;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 40px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    margin: .2em 1em 0 1em;
+    font-weight: 400;
+}
+
+#filter > h2 {
+    width: 50%;
+    font-weight: 500;
+}
+
+span > button {
+    padding: .3em .7em;
+}
+
+input[type=checkbox] {
+    border-bottom: 1px solid #b7b7b7;
+    background-color: transparent!important;
+    height: 1em;
+    width: 1em;
+    border-radius: 0!important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 1em!important;
+}
+
+legend {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 1.25em;
+}
+
+#lspage {
+    background-color: white;
+    display: flex;
+    padding: 0 1.3em;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+#signup {
+    background-color: #ffc917;
+    padding: 1em .7em 1em .7em;
+    color: #003082;
+    margin-bottom: 1.3em;
+}
+
+#login {
+    padding: 1em .7em 1em .7em;
+    margin-bottom: 1.3em;
+    background-color: #ffc917;
+}
+
+fieldset {
+    border: 0 none;
+}
+
+.btn {
+    background-color: #0079d3;
+    text-align: center;
+    line-height: 1.5625rem;
+    font-size: 1rem;
+    width: auto;
+    margin-left: 1em;
+}
+
+fieldset > input {
+    height: 45px;
+    border: none;
+    padding: 11px 15px 9px 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+legend {
+    font-size: 1.25em;
+    line-height: 25px;
+    margin-bottom: 1.25em;
+}
+
+fieldset > label {
+    border-bottom: none;
+}
+
+fieldset > input {
+    height: 45px;
+    border: none;
+    padding: 11px 15px 9px 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+#lspage > h1 {
+    font-weight: normal;
+    margin-top: .5em
+}
+
+.btn {
+    background-color: #0079d3!important;
+    color: #fff;
+    box-shadow: 0 -.1em 0 #005ca0 inset;
+    padding: .6em 1.1em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 0;
+}
+
+
+/********************************************
+/*****************    Mediaqueries         **
+********************************************/
+
+@media screen and (max-width: 42em) {
+    main {
+        width: 95%;
+    }
+    #filter {
+        padding: .5em;
+        top: 5em;
+        z-index: 4;
+    }
+    #search {
+        width: 95%;
+        display: block;
+        margin: .5em auto 1em auto;
+        background-color: white;
+        padding: .5em 1em .5em 1em;
+        font-size: .8em;
+        font-style: italic;
+    }
+    label {
+        margin-right: .9em;
+    }
+    #tags {
+        display: block;
+        width: 95%;
+        margin: 1em auto 1em auto;
+        text-align: center;
+    }
+    #searchbtn {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    main {
+        margin-top: 6em;
+    }
+    span > button {
+        padding: .3em .7em;
+    }
+    /*****************    signup page         */
+    section > #login {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 42em) {
+    body {
+        xbackground-color: pink;
+    }
+    main {
+        margin-top: 1em;
+        width: 98%;
+    }
+    .tile {
+        background-color: #fff;
+        margin-bottom: 1em;
+        width: 48%;
+    }
+    #filter {
+        padding-top: .5em;
+        height: 13em;
+    }
+    legend {
+        font-size: 1.4em
+    }
+    .btn {
+        background-color: #0079d3!important;
+        color: #fff;
+        box-shadow: 0 -.1em 0 #005ca0 inset;
+        padding: .6em 1.1em;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1rem;
+        width: 100%;
+        margin-left: 0;
+    }
+    /*****************    signup page         */
+    #lspage {
+        width: 80%
+    }
+    section > #login {
+        margin-top: 1em;
+    }
+    #login {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 61em) {
+    body {
+        xbackground-color: aquamarine;
+    }
+    #background {
+        height: 17em;
+        overflow: hidden;
+    }
+    
+    #logo{
+    margin-top:1%;}
+    #filter {
+        height: 9em;
+        top: 2em;
+    }
+    main {
+        width: 90%;
+        margin-top: 3em;
+    }
+    .tile {
+        background-color: #fff;
+        margin: 0 .5em 1em .5em;
+        width: calc(33% - 1em);
+    }
+    .int > button {
+        font-size: .9em
+    }
+    #search {
+        width: 45%;
+        display: inline-block;
+        margin-left: 2em
+    }
+    #tags {
+        display: inline-block;
+        width: 45%;
+        margin-left: 2em;
+    }
+    #filter > button {
+        display: inline-block;
+        width: 12%;
+        margin-left: 35%;
+        margin-right: 2em;
+    }
+    #searchbtn {
+        display: inline-block;
+        width: 12%;
+    }
+    legend {
+        font-size: 1.4em;
+    }
+    #lspage {
+        width: 89%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #lspage > section > form {
+        display: inline;
+        width: 45%;
+        padding: 1em 1em 1em 1em;
+        justify-content: space-between;
+    }
+    fieldset > input {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .btn {
+        width: 100%;
+        margin-topt: 1em;
+    }
+    fieldset > label {
+        display: inline-block;
+        width: 42%;
+    }
+    fieldset > input {
+        margin-bottom: 1em;
+    }
+    
+    #signup{
+    margin-top:1em;}
+    
+    #login{height:15em;}
+    
+    h1 {
+    margin-left:.5em;}
+}
+
+@media screen and (min-width: 70em) {
+    body {
+        xbackground-color: gray;
+    }
+    main {
+        width: 85%;
+    }
+    #filter {
+        width: 85%;
+    }
+    
+    #lspage {
+            max-width: 80%;
+    }
+    legend {
+        font-size: 1.4em
+    }
+}
