@@ -187,11 +187,11 @@ select {
     border: none;
     background: none;
 }
-#background {
+#background, .background {
     display: block;
     z-index: 0;
 }
-#background > img {
+#background, .background > img {
     width: 100%;
 }
 #filter {
@@ -475,6 +475,9 @@ article > section.show {
     transition: all 1s;
 }
 
+#tweede, #derde {
+    display:none;
+}
 /********************************************
 /*****************    Mediaqueries         **
 ********************************************/
@@ -482,6 +485,9 @@ article > section.show {
 @media screen and (max-width: 42em) {
     main {
         width: 95%;
+    }
+    #background{
+        height:15em;
     }
     #filter {
         padding: .5em;
@@ -535,6 +541,14 @@ article > section.show {
     }
 }
 @media screen and (min-width: 42em) {
+    
+    #eerste, #derde {
+        display:none;
+    }
+    
+    #tweede {
+        display:block;
+    }
     body {
         xbackground-color: pink;
     }
@@ -549,7 +563,7 @@ article > section.show {
     }
     #filter {
         padding-top: .5em;
-        height: 13em;
+        height: 17em;
     }
     legend {
         font-size: 1.4em
@@ -579,8 +593,17 @@ article > section.show {
         margin-top: 4px;
         ;
     }
+    #background{
+        height:20em;
+    }
 }
 @media screen and (min-width: 61em) {
+    #eerste, #tweede {
+        display:none;
+    }
+    #derde{
+        display:block;
+    }
     body {
         xbackground-color: aquamarine;
     }
