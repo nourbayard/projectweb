@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img src="logo.png" alt="logo" id="logo">
+        <img src="logons.png" alt="logo" id="logo">
         <nav>
             <ul>
                 <li>
@@ -22,43 +22,78 @@
             </ul>
         </nav>
     </header>
-    <div id="background">
+    <picture id="background">
         <img src="headerbg.jpg">
-    </div>
+    </picture>
     <section id="filter">
-       <h2>Zoek &#38; filter</h2>
+        <h2>Zoek &#38; filter</h2>
         <input type=search placeholder="Zoek op trefwoorden..." name=searchbar id="search">
-        <form action="#" id="tags">
-            <input type="checkbox" name="genre" value="Drama">
-            <label class="genre">Drama</label>
-            <input type="checkbox" name="genre" value="avontuur">
-            <label class="genre">Avontuur</label>
-            <input type="checkbox" name="genre" value="vriendschap">
-            <label class="genre">Vriendschap</label>
-            <input type="checkbox" name="genre" value="nonfictie">
-            <label class="genre">Sci-Fi</label>
-        </form>
+        <section class="cmda-dropdown-menu">
+            <h1>Filter... </h1>
+            <nav>
+                <div id="cmda-dropdown-icon"></div>
+                <ul>
+                    <li>
+
+                        <label class="genre">
+                        <input type="checkbox" name="genre" value="Drama">Drama</label>
+                    </li>
+
+                    <li>
+        
+                        <label class="genre">
+                        <input type="checkbox" name="genre" value="avontuur">Avontuur</label>
+                    </li>
+                    <li>
+                    
+                        <label class="genre">
+                        <input type="checkbox" name="genre" value="vriendschap">Vriendschap</label>
+                    </li>
+
+                </ul>
+            </nav>
+        </section>
         <button>Meer opties</button>
         <input type="submit" name="search" value="Zoeken &#62;" id="searchbtn">
     </section>
     <main id="overview">
         <article class="tile">
-           <span class="pic">
+            <span class="pic">
                <img src="pic2.png">
            </span>
-            <h2>Blind</h2>
+           
+           <button class="1"> <img src="info.png">  </button>
+        <section class="inf">
+        <h2>Verhaal informatie</h2>
+        <p>Schrijver: Max Molovich
+        Kindvriendelijk: ja.<br>
+          Genre: hectisch, grappig, leuk.<br> Tijdsduur: 0-2 uur </p></section>
+            <h2>Droom</h2>
             <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. […]</p>
-            <span class="int"><button>save ✓</button>
+            
+            <section class="int">
+                   
+                   <button id="btn">
+                        <picture>
+                            <img src="like.png" id="img">
+                        </picture>
+                    </button>
+                    
                     <button>like ♡</button>
-                    <button>lees verder &#62;</button></span>
+                    <button>lees verder &#62;</button>
+        </section>
         </article>
+        
+        
         <!--
             -->
         <article class="tile">
-           <span class="pic">
+            <span class="pic">
                <img src="pic1.png">
            </span>
-            <h2>Doof</h2>
+           
+           
+            <h2>Nico Dijkshoorn die Mart Smeets imiteert</h2>
             <p>De bus stopt. Mensen stappen uit. Heel voorzichtig kijk ik in de kinderwagen. Mijn zoon slaapt eindelijk. Ik had het kunnen weten, want halverwege de busreis merkte ik dat de mensen zich niet meer aan ons stoorden. […]</p>
             <span class="int"><button class="bookmark">save ✓</button>
                     <button class="like">like ♡</button>
@@ -68,7 +103,7 @@
         <!--
             -->
         <article class="tile">
-           <span class="pic">
+            <span class="pic">
                <img src="pic3.png">
            </span>
             <h2>Onomatopee</h2>
@@ -81,7 +116,7 @@
         <!--
             -->
         <article class="tile">
-           <span class="pic">
+            <span class="pic">
                <img src="pic6.png">
            </span>
             <h2>Blind</h2>
@@ -94,7 +129,7 @@
         <!--
             -->
         <article class="tile">
-           <span class="pic">
+            <span class="pic">
                <img src="pic4.png">
            </span>
             <h2>Doof</h2>
@@ -107,7 +142,7 @@
         <!--
             -->
         <article class="tile">
-           <span class="pic">
+            <span class="pic">
                <img src="pic5.png">
            </span>
             <h2>Onomatopee</h2>
@@ -119,5 +154,6 @@
         </article>
     </main>
 </body>
+<script src="script.js" type="text/javascript"></script>
 
 </html>
